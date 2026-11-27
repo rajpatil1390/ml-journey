@@ -1,0 +1,28 @@
+# Ruff config for the whole monorepo, used locally (`ruff check .`) and in CI.
+# Ruff lints .py files and Jupyter notebooks (.ipynb).
+target-version = "py312"
+line-length = 100
+
+# Each module has its own `src/` package; listing the module folders lets the
+# import sorter treat `from src import ...` as first-party code.
+src = [
+    "01-intro",
+    "02-regression",
+    "03-web-app",
+    "04-classification",
+    "05-clustering",
+    "06-nlp",
+    "07-timeseries",
+    "08-reinforcement",
+    "09-real-world",
+]
+
+[lint]
+# pycodestyle, pyflakes, isort, bugbear, pyupgrade
+select = ["E", "W", "F", "I", "B", "UP"]
+# Long lines are a formatting concern, not a bug.
+ignore = ["E501"]
+
+[lint.per-file-ignores]
+# Notebooks often add `sys.path.append("..")` before importing from src/.
+"*.ipynb" = ["E402"]
