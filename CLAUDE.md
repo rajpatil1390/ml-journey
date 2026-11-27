@@ -46,6 +46,8 @@ Use Conventional Commits, imperative mood, at most 72 characters in the subject:
 
 The scope in parentheses is the module folder. Leave it out for repo-wide changes.
 
+- **Attribution:** Commits must contain no co-author trailers; author must be the human running the session.
+
 ## 4. Using the reference curriculum
 
 - The reference repo is cloned read-only at `../ML-For-Beginners` (sparse checkout without translations).
