@@ -90,6 +90,8 @@ ml-journey/
 | Quality and CI | Ruff, GitHub Actions, branch protection with required reviews |
 | AI pair programming | Claude Code (rules in `CLAUDE.md`) |
 
+Built with assistance from Claude Code.
+
 ## Running locally
 
 ```bash

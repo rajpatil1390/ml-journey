@@ -46,6 +46,9 @@ Use Conventional Commits, imperative mood, at most 72 characters in the subject:
 
 The scope in parentheses is the module folder. Leave it out for repo-wide changes.
 
+- **Attribution:** Do not add Co-Authored-By or 'Generated with' lines to commits or PRs; commits must be authored by the human running the session (check git config user.email matches their GitHub account).
+  `.claude/settings.json` (committed, shared by the team) turns off Claude Code's automatic attribution.
+
 ## 4. Using the reference curriculum
 
 - The reference repo is cloned read-only at `../ML-For-Beginners` (sparse checkout without translations).
