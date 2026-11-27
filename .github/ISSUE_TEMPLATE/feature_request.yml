@@ -1,0 +1,50 @@
+name: Feature / module task
+description: Propose a feature, or plan work on a module.
+title: "feat(<module>): "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for new module work, app features, or improvements. Add the `module`, `deploy` or `docs` label as appropriate.
+  - type: dropdown
+    id: module
+    attributes:
+      label: Module
+      options:
+        - 01-intro
+        - 02-regression
+        - 03-web-app
+        - 04-classification
+        - 05-clustering
+        - 06-nlp
+        - 07-timeseries
+        - 08-reinforcement
+        - 09-real-world
+        - repo-wide (CI, docs, tooling)
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What should exist when this is done, and why does it matter?
+      placeholder: Add a polynomial regression model and compare it with the linear baseline.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: A checklist the reviewer can verify.
+      value: |
+        - [ ] Notebook runs top to bottom
+        - [ ] `app.py` works locally and on Streamlit Community Cloud
+        - [ ] README updated
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes / references
+      description: Links to the ML-For-Beginners lesson, datasets, ideas.

@@ -1,0 +1,63 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+
+# ---- Secrets ----
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+**/.streamlit/secrets.toml
+
+# ---- Jupyter ----
+.ipynb_checkpoints/
+*.nbconvert.ipynb
+.virtual_documents/
+
+# ---- Large data ----
+# GitHub rejects files over 100 MB. Keep big downloads in <module>/data/raw/
+# and document the download steps in the module README.
+**/data/raw/
+**/data/external/
+**/data/interim/
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+*.7z
+*.rar
+*.parquet
+*.feather
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+
+# ---- Editors / OS ----
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Claude Code (personal settings) ----
+.claude/settings.local.json
